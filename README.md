@@ -1,5 +1,7 @@
 # rollup-plugin-coffee2 [![NPM version][npm-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url] [![Dependency Status][dependency-img]][dependency-url] [![Gitter chat][gitter-img]][gitter-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zeekay/rollup-plugin-coffee2.svg)](https://greenkeeper.io/)
+
 A Rollup.js plugin that compiles [CoffeeScript 2](http://coffeescript.org/v2) (and 1).
 
 ## Install
