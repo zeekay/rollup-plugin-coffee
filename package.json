@@ -25,6 +25,7 @@
   "jsnext:main": "dist/lib.mjs",
   "devDependencies": {
     "coffee-script": "1.12.4",
+    "coffeescript": "1.12.4",
     "handroll": "0.7.2"
   },
   "peerDependencies": {
