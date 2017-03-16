@@ -1,0 +1,38 @@
+{
+  "name": "rollup-plugin-coffee2",
+  "version": "0.1.0",
+  "description": "A Rollup.js plugin to compile CoffeeScript 2 (and 1)",
+  "keywords": [
+    "coffee",
+    "coffeescript",
+    "rollup-plugin"
+  ],
+  "author": "Zach Kelling <z@zeekay.io> (http://zeekay.io)",
+  "homepage": "https://github.com/zeekay/rollup-plugin-coffee2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeekay/rollup-plugin-coffee2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zeekay/rollup-plugin-coffee2/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/lib.js",
+  "module": "dist/lib.mjs",
+  "jsnext:main": "dist/lib.mjs",
+  "devDependencies": {
+    "coffee-script": "1.12.4",
+    "handroll": "0.7.2"
+  },
+  "peerDependencies": {
+    "rollup": ">=0.34.1 <1"
+  },
+  "scripts": {
+    "build": "cake build",
+    "prepublish": "npm run build",
+    "pretest": "npm run build"
+  }
+}
