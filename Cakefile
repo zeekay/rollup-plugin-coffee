@@ -11,10 +11,14 @@ task 'clean', 'clean project', ->
 # task 'build', 'build project', ['bundle'], ->
 
 task 'build', 'build project', ->
-  require('handroll').write
+  handroll = require 'handroll'
+
+  bundle = yield handroll.bundle
     entry:    'src/index.coffee'
     external: true
-    format:   'es'
+
+  yield bundle.write format: 'es'
+  yield bundle.write format: 'cjs'
 
 task 'watch', 'watch project', ->
   build = (filename) ->
