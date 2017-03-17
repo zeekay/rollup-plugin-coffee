@@ -26,8 +26,6 @@ export default (opts = {}) ->
 
   {extname} = require 'path'
 
-  console.log 'searching for coffeescript'
-
   if opts.version?
     coffee = findCoffee opts.version
   else
