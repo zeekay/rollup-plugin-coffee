@@ -14,7 +14,6 @@ export default (opts = {}) ->
 
   transform: (code, id) ->
     if opts.extensions.indexOf(extname id) == -1
-      console.log 'not our show'
       return null
 
     try
@@ -23,7 +22,6 @@ export default (opts = {}) ->
         bare:      opts.bare
         sourceMap: opts.sourceMap
     catch err
-      console.log 'in our error handler'
       if err.location?
         err.formattedMessage = formatError code, id, err
       throw err
