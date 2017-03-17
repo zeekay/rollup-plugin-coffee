@@ -25,12 +25,14 @@
   "jsnext:main": "dist/lib.mjs",
   "devDependencies": {
     "cake-bundle": "0.1.0",
+    "cake-linked": "0.1.0",
+    "cake-outdated": "0.1.4",
     "cake-publish": "0.1.5",
     "cake-test": "0.1.0",
     "cake-version": "0.1.9",
     "coffee-script": "1.12.4",
-    "coffeescript": "1.12.4",
-    "handroll": "0.7.2",
+    "coffeescript": "2.0.0-alpha1",
+    "rollup-plugin-coffee-script": "1.1.0",
     "shortcake": "1.2.5"
   },
   "peerDependencies": {
