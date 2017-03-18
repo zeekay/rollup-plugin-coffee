@@ -20,9 +20,9 @@ findEither = ->
     coffee = findCoffee 1
 
 export default (opts = {}) ->
-  opts.sourceMap          ?= true
-  opts.bare               ?= true
-  opts.extensions         ?= ['.coffee', '.litcoffee']
+  opts.sourceMap  ?= true
+  opts.bare       ?= true
+  opts.extensions ?= ['.coffee', '.litcoffee']
 
   {extname} = require 'path'
 
