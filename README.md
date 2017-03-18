@@ -1,6 +1,7 @@
 # rollup-plugin-coffee2 [![NPM version][npm-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url] [![Dependency Status][dependency-img]][dependency-url] [![Gitter chat][gitter-img]][gitter-url]
 
-A Rollup.js plugin that compiles [CoffeeScript 2](http://coffeescript.org/v2) (and 1).
+A Rollup.js plugin that compiles [CoffeeScript 2](http://coffeescript.org/v2)
+(and 1).
 
 ## Install
 ```bash
@@ -20,11 +21,19 @@ export default {
       // defaults
       bare:       true,
       extensions: ['.coffee', '.litcoffee'],
+      version:    'auto'
+      between )
       sourceMap:  true
     })
   ]
 };
 ```
+
+By default this plugin will use any version of CoffeeScript available, trying to
+use 2.0 and falling back to 1.0 if necessary.
+
+You can specify `version: 1` or `version: 2` to ensure a certain version is used
+(or error if it's unavailable).
 
 ## License
 MIT
