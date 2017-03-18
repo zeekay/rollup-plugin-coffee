@@ -4,7 +4,7 @@
   "description": "A Rollup.js plugin to compile CoffeeScript 2 (and 1)",
   "keywords": [
     "coffee",
-    "coffeescript",
+    "coffee-script",
     "rollup-plugin"
   ],
   "author": "Zach Kelling <z@zeekay.io> (http://zeekay.io)",
