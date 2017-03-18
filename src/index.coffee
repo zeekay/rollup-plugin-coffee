@@ -31,6 +31,7 @@ export default (opts = {}) ->
   else
     coffee = findEither()
 
+  name: 'coffee2'
   transform: (code, id) ->
     if opts.extensions.indexOf(extname id) == -1
       return null
