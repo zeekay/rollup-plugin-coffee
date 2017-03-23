@@ -1,4 +1,6 @@
 import formatError from './format-error'
+import {extname}   from 'path'
+
 
 version = (coffee) ->
   parseInt (coffee.VERSION.split '.')[0], 10
@@ -23,8 +25,6 @@ export default (opts = {}) ->
   opts.sourceMap  ?= true
   opts.bare       ?= true
   opts.extensions ?= ['.coffee', '.litcoffee']
-
-  {extname} = require 'path'
 
   if opts.version?
     coffee = findCoffee opts.version
