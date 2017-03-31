@@ -8,25 +8,13 @@ use 'cake-test'
 use 'cake-version'
 
 task 'clean', 'clean project', ->
-  exec 'rm -rf dist'
+  exec 'rm -rf lib'
 
-task 'bootstrap', 'boostrap project', ->
-  coffee = require 'rollup-plugin-coffee-script'
-
+task 'build', 'build project', ->
   bundle.write
-    entry:  'src/index.coffee'
-    dest:   'dist/bootstrap.mjs'
-    format: 'es'
+    entry: 'src/index.coffee'
     compilers:
-      coffee: coffee()
-
-task 'build', 'build project', ['bootstrap'], ->
-  coffee = require './'
-
-  bundle.write
-    entry: 'dist/bootstrap.mjs'
-    compilers:
-      coffee: coffee version: 2
+      coffee: version: 1
 
 task 'watch', 'watch project', ->
   build = (filename) ->
