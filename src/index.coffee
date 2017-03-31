@@ -21,6 +21,12 @@ findEither = ->
   catch err
     coffee = findCoffee 1
 
+sourceMap = (out) ->
+  if out.v3SourceMap
+    JSON.parse out.v3SourceMap
+  else
+    null
+
 export default (opts = {}) ->
   opts.sourceMap  ?= true
   opts.bare       ?= true
@@ -47,4 +53,4 @@ export default (opts = {}) ->
       throw err
 
     code: out.js
-    map:  out.v3SourceMap
+    map:  sourceMap out
