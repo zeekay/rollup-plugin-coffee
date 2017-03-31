@@ -25,16 +25,16 @@
   "module": "lib/rollup-plugin-coffee2.mjs",
   "jsnext:main": "lib/rollup-plugin-coffee2.mjs",
   "devDependencies": {
-    "cake-bundle": "0.2.8",
+    "cake-bundle": "0.2.18",
     "cake-linked": "0.1.0",
-    "cake-outdated": "0.1.15",
+    "cake-outdated": "0.1.16",
     "cake-publish": "0.1.10",
     "cake-test": "0.1.0",
-    "cake-version": "0.1.11",
+    "cake-version": "0.1.14",
     "coffee-script": "1.12.4",
     "coffeescript": "2.0.0-alpha1",
     "rollup-plugin-coffee-script": "1.1.0",
-    "shortcake": "1.2.5"
+    "shortcake": "1.2.7"
   },
   "peerDependencies": {
     "rollup": ">=0.34.1 <1"
