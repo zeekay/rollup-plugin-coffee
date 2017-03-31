@@ -18,11 +18,12 @@
   },
   "license": "MIT",
   "files": [
-    "dist/"
+    "lib/",
+    "src/"
   ],
-  "main": "dist/lib.js",
-  "module": "dist/lib.mjs",
-  "jsnext:main": "dist/lib.mjs",
+  "main": "lib/rollup-plugin-coffee2.js",
+  "module": "lib/rollup-plugin-coffee2.mjs",
+  "jsnext:main": "lib/rollup-plugin-coffee2.mjs",
   "devDependencies": {
     "cake-bundle": "0.2.8",
     "cake-linked": "0.1.0",
