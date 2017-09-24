@@ -32,10 +32,13 @@ export default (opts = {}) ->
   opts.bare       ?= true
   opts.extensions ?= ['.coffee', '.litcoffee']
 
-  if opts.version?
-    coffee = findCoffee opts.version
-  else
-    coffee = findEither()
+  try
+    if opts.version?
+      coffee = findCoffee opts.version
+    else
+      coffee = findEither()
+  catch err
+    return name: 'coffee2 (disabled)'
 
   name: 'coffee2'
   transform: (code, id) ->
