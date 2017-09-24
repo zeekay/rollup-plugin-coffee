@@ -32,7 +32,7 @@
     "cake-test": "0.1.0",
     "cake-version": "0.1.15",
     "coffee-script": "1.12.4",
-    "coffeescript": "2.0.0-alpha1",
+    "coffeescript": "^2.0.0-alpha1",
     "rollup-plugin-coffee-script": "1.1.0",
     "shortcake": "1.2.8"
   },
