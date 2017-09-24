@@ -33,15 +33,14 @@
     "sake-outdated": "^0.1.28",
     "sake-publish": "^0.1.16",
     "sake-test": "^0.1.5",
-    "sake-version": "^0.1.19",
-    "shortcake": "1.2.8"
+    "sake-version": "^0.1.19"
   },
   "peerDependencies": {
     "rollup": ">=0.34.1 <1"
   },
   "scripts": {
-    "build": "cake build",
-    "prepublish": "npm run build",
+    "build": "sake build",
+    "prepublishOnly": "npm run build",
     "pretest": "npm run build"
   }
 }
