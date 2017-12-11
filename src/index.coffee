@@ -1,25 +1,7 @@
 import formatError from './format-error'
 import {extname}   from 'path'
+import findCoffee  from 'find-coffee'
 
-
-version = (coffee) ->
-  parseInt (coffee.VERSION.split '.')[0], 10
-
-# Find specific version of CoffeeScript
-findCoffee = (wanted) ->
-  for pkg in ['coffeescript', 'coffee-script']
-    try
-      coffee = require pkg
-      return coffee if (version coffee) == wanted
-    catch err
-  throw new Error 'Unable to find CoffeeScript matching version ' + wanted
-
-# Find either CoffeeScript version, preferring 2.0
-findEither = ->
-  try
-    coffee = findCoffee 2
-  catch err
-    coffee = findCoffee 1
 
 sourceMap = (out) ->
   if out.v3SourceMap
@@ -33,10 +15,7 @@ export default (opts = {}) ->
   opts.extensions ?= ['.coffee', '.litcoffee']
 
   try
-    if opts.version?
-      coffee = findCoffee opts.version
-    else
-      coffee = findEither()
+    coffee = findCoffee opts.version
   catch err
     return name: 'coffee2 (disabled)'
 
