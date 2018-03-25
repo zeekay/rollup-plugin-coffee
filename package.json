@@ -27,11 +27,11 @@
   "devDependencies": {
     "coffeescript": "^2.2.3",
     "rollup-plugin-coffee-script": "2.0.0",
-    "sake-bundle": "^0.6.3",
-    "sake-cli": "^0.5.24",
-    "sake-outdated": "^0.1.28",
+    "sake-bundle": "^0.6.5",
+    "sake-cli": "^0.5.25",
+    "sake-outdated": "^0.2.1",
     "sake-publish": "^0.1.16",
-    "sake-test": "^0.1.5",
+    "sake-test": "^0.1.6",
     "sake-version": "^0.1.19"
   },
   "peerDependencies": {
@@ -43,6 +43,6 @@
     "pretest": "npm run build"
   },
   "dependencies": {
-    "find-coffee": "^0.1.3"
+    "find-coffee": "^0.2.0"
   }
 }
