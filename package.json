@@ -4,6 +4,7 @@
   "description": "A Rollup.js plugin to compile CoffeeScript 2 (and 1)",
   "keywords": [
     "coffee",
+    "coffeescript",
     "coffee-script",
     "rollup-plugin"
   ],
@@ -22,8 +23,8 @@
     "src/"
   ],
   "main": "lib/rollup-plugin-coffee2.js",
-  "module": "lib/rollup-plugin-coffee2.mjs",
-  "jsnext:main": "lib/rollup-plugin-coffee2.mjs",
+  "module": "lib/rollup-plugin-coffee2.es.js",
+  "jsnext:main": "lib/rollup-plugin-coffee2.es.js",
   "devDependencies": {
     "coffeescript": "^2.3.1",
     "find-coffee": "^0.2.0",
