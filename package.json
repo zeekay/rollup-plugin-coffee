@@ -25,14 +25,14 @@
   "module": "lib/rollup-plugin-coffee2.mjs",
   "jsnext:main": "lib/rollup-plugin-coffee2.mjs",
   "devDependencies": {
-    "coffeescript": "^2.2.3",
+    "coffeescript": "^2.3.1",
     "find-coffee": "^0.2.0",
     "rollup-plugin-coffee-script": "2.0.0",
-    "sake-bundle": "^0.6.5",
-    "sake-cli": "^0.5.25",
-    "sake-outdated": "^0.2.1",
-    "sake-publish": "^0.1.16",
-    "sake-test": "^0.1.6",
+    "sake-bundle": "^0.6.14",
+    "sake-cli": "^0.7.2",
+    "sake-outdated": "^0.3.0",
+    "sake-publish": "^0.1.17",
+    "sake-test": "^0.2.1",
     "sake-version": "^0.1.19"
   },
   "peerDependencies": {
