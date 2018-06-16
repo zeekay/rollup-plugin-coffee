@@ -1,6 +1,6 @@
 {
   "name": "@zeekay/rollup-plugin-coffee",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "A Rollup.js plugin to compile CoffeeScript 2 (and 1)",
   "keywords": [
     "coffee",
