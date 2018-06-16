@@ -27,7 +27,7 @@
   "jsnext:main": "lib/rollup-plugin-coffee2.es.js",
   "devDependencies": {
     "coffeescript": "^2.3.1",
-    "find-coffee": "^0.2.0",
+    "find-coffee": "^0.2.2",
     "rollup-plugin-coffee-script": "2.0.0",
     "sake-bundle": "^0.6.14",
     "sake-cli": "^0.7.2",
