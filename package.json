@@ -9,26 +9,25 @@
     "rollup-plugin"
   ],
   "author": "Zach Kelling <z@zeekay.io> (http://zeekay.io)",
-  "homepage": "https://github.com/zeekay/rollup-plugin-coffee2",
+  "homepage": "https://github.com/zeekay/rollup-plugin-coffee",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeekay/rollup-plugin-coffee2.git"
+    "url": "https://github.com/zeekay/rollup-plugin-coffee.git"
   },
   "bugs": {
-    "url": "https://github.com/zeekay/rollup-plugin-coffee2/issues"
+    "url": "https://github.com/zeekay/rollup-plugin-coffee/issues"
   },
   "license": "MIT",
   "files": [
     "lib/",
     "src/"
   ],
-  "main": "lib/rollup-plugin-coffee2.js",
-  "module": "lib/rollup-plugin-coffee2.es.js",
-  "jsnext:main": "lib/rollup-plugin-coffee2.es.js",
+  "main": "lib/rollup-plugin-coffee.js",
+  "module": "lib/rollup-plugin-coffee.es.js",
+  "jsnext:main": "lib/rollup-plugin-coffee.es.js",
   "devDependencies": {
     "coffeescript": "^2.3.1",
     "find-coffee": "^0.2.2",
-    "rollup-plugin-coffee-script": "2.0.0",
     "sake-bundle": "^0.6.14",
     "sake-cli": "^0.7.2",
     "sake-outdated": "^0.3.0",
@@ -43,5 +42,8 @@
     "build": "sake build",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build"
+  },
+  "dependencies": {
+    "coffee-script": "^1.12.7"
   }
 }
