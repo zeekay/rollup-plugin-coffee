@@ -1,5 +1,7 @@
 # @zeekay/rollup-plugin-coffee
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zeekay/rollup-plugin-coffee&ref=master&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zeekay/rollup-plugin-coffee&ref=master&action=edit)
+
 [![NPM version][npm-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url] [![Dependency Status][dependency-img]][dependency-url] [![Gitter chat][gitter-img]][gitter-url]
 
 A Rollup.js plugin that compiles [CoffeeScript](http://coffeescript.org/). Uses
